@@ -1,0 +1,27 @@
+== Namestitev
+
+=== Uporabi GIT
+
+- V mapi kjer je nameščen Wordpress naredite mapo /wp-includes/languages (če ta še ne obstaja)
+- Iz mape /wp-includes/languages v terminalu pokličite: git clone git@github.com:lenart/wordpress-sl_SI.git
+- Popravite wp-config.php in sicer vpišite "sl_SI" pri define ('WPLANG', 'sl_SI');
+
+=== Uporabi arhiv s prevodom
+
+- Datoteko s prevodom si shranite na disk.
+- Odprite arhiv in odpakirajte datoteko sl_SI.mo.
+- Povežite se na WordPress strežnik ter v imenik wp-includes ustvarite imenik languages.
+- Naložite datoteko sl_SI.mo v ta direktorij (wp-includes/languages).
+- Popravite wp-config.php in sicer vpišite "sl_SI" pri define ('WPLANG', 'sl_SI');
+
+== Urejanje prevoda 
+
+- Če se želite sami igrati s prevodi, naložite program POEDIT (http://www.poedit.net/), odpakirajte datoteko sl_SI.po in veselo na delo.
+- Po končnem urejanju, izvozite .mo datoteko in jo shranite v /wp-includes/languages
+
+Opomba: za pravilno delovanje šumnikov, mora vaša tema uporabljati UTF-8 nabor znakov.
+
+== Avtorji
+
+Avtor prvotnega prevoda je Domen Savič (http://www.dsavic.net)
+Prevod je dopolnil Lenart Rudel (lenart.rudel@gmail.com)
